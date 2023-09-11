@@ -20,7 +20,10 @@ class CircleTab extends StatelessWidget {
           textField(circleController.jariController, TextInputType.number,
               "Jari - Jari", focusN),
           Spacer(),
-          Obx(() => Text(circleController.resultStr.value)),
+          Obx(() => Text(
+                circleController.resultStr.value,
+                style: TextStyle(fontSize: 20),
+              )),
           calculationButtons(() => circleController.calculateArea(),
               () => circleController.reset())
         ],

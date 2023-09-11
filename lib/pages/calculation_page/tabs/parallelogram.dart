@@ -26,7 +26,10 @@ class ParallelogramTab extends StatelessWidget {
           textField(parallelogramController.tinggiController,
               TextInputType.number, "Tinggi", focusN2),
           Spacer(),
-          Obx(() => Text(parallelogramController.resultStr.value)),
+          Obx(() => Text(
+                parallelogramController.resultStr.value,
+                style: TextStyle(fontSize: 20),
+              )),
           calculationButtons(() => parallelogramController.calculateArea(),
               () => parallelogramController.reset())
         ],

@@ -24,7 +24,10 @@ class RectangleTab extends StatelessWidget {
         textField(rectangleController.side1Controller, TextInputType.number,
             "Sisi 1", focusN1),
         const Spacer(),
-        Obx(() => Text(rectangleController.resultStr.value)),
+        Obx(() => Text(
+              rectangleController.resultStr.value,
+              style: TextStyle(fontSize: 20),
+            )),
         calculationButtons(() => rectangleController.calculateAreaSamaSisi(),
             () => rectangleController.reset())
       ],
@@ -44,7 +47,10 @@ class RectangleTab extends StatelessWidget {
         textField(rectangleController.side2Controller, TextInputType.number,
             "Sisi 2", focusN2),
         const Spacer(),
-        Obx(() => Text(rectangleController.resultStr.value)),
+        Obx(() => Text(
+              rectangleController.resultStr.value,
+              style: TextStyle(fontSize: 20),
+            )),
         calculationButtons(() => rectangleController.calculateAreaPanjang(),
             () => rectangleController.reset())
       ],

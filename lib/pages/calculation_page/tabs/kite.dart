@@ -26,7 +26,10 @@ class KiteTab extends StatelessWidget {
           textField(kiteController.diagonalController2, TextInputType.number,
               "Garis Diagonal 2", focusN2),
           Spacer(),
-          Obx(() => Text(kiteController.resultStr.value)),
+          Obx(() => Text(
+                kiteController.resultStr.value,
+                style: TextStyle(fontSize: 20),
+              )),
           calculationButtons(() => kiteController.calculateArea(),
               () => kiteController.reset())
         ],

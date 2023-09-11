@@ -31,7 +31,10 @@ class TriangleTab extends StatelessWidget {
         textField(triangleController.tinggiController, TextInputType.number,
             "Tinggi", focusN2),
         const Spacer(),
-        Obx(() => Text(triangleController.resultStr.value)),
+        Obx(() => Text(
+              triangleController.resultStr.value,
+              style: TextStyle(fontSize: 20),
+            )),
         calculationButtons(() => triangleController.calculateArea(),
             () => triangleController.reset())
       ],
@@ -51,7 +54,10 @@ class TriangleTab extends StatelessWidget {
         textField(triangleController.side2Controller, TextInputType.number,
             "Sisi C", focusN2),
         const Spacer(),
-        Obx(() => Text(triangleController.resultStr.value)),
+        Obx(() => Text(
+              triangleController.resultStr.value,
+              style: TextStyle(fontSize: 20),
+            )),
         calculationButtons(() => triangleController.calculatePythagorasA(),
             () => triangleController.reset())
       ],
@@ -71,7 +77,10 @@ class TriangleTab extends StatelessWidget {
         textField(triangleController.side2Controller, TextInputType.number,
             "Sisi C", focusN2),
         const Spacer(),
-        Obx(() => Text(triangleController.resultStr.value)),
+        Obx(() => Text(
+              triangleController.resultStr.value,
+              style: TextStyle(fontSize: 20),
+            )),
         calculationButtons(() => triangleController.calculatePythagorasB(),
             () => triangleController.reset())
       ],
@@ -91,7 +100,10 @@ class TriangleTab extends StatelessWidget {
         textField(triangleController.side2Controller, TextInputType.number,
             "Sisi B", focusN2),
         const Spacer(),
-        Obx(() => Text(triangleController.resultStr.value)),
+        Obx(() => Text(
+              triangleController.resultStr.value,
+              style: TextStyle(fontSize: 20),
+            )),
         calculationButtons(() => triangleController.calculatePythagorasC(),
             () => triangleController.reset())
       ],
