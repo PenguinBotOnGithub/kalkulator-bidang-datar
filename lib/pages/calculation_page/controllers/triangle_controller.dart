@@ -21,7 +21,7 @@ class TriangleController extends GetxController {
     double? tinggi = double.tryParse(tinggiController.text);
 
     if (alas == null || tinggi == null) {
-      resultStr.value = "No calculated value";
+      resultStr.value = "Only valid numbers are allowed";
     } else {
       double result = (alas * tinggi) / 2;
       resultStr.value = "Calculated value: $result";
@@ -33,7 +33,7 @@ class TriangleController extends GetxController {
     double? sisiB = double.tryParse(side2Controller.text);
 
     if (sisiA == null || sisiB == null) {
-      resultStr.value = "No calculation value";
+      resultStr.value = "Only valid numbers are allowed";
     } else {
       double result = sqrt(pow(sisiA, 2) + pow(sisiB, 2));
       resultStr.value = "Calculated value: $result";
@@ -45,7 +45,7 @@ class TriangleController extends GetxController {
     double? sisiC = double.tryParse(side2Controller.text);
 
     if (sisiB == null || sisiC == null) {
-      resultStr.value = "No calculation value";
+      resultStr.value = "Only valid numbers are allowed";
     } else {
       double result = sqrt(pow(sisiC, 2) - pow(sisiB, 2));
       resultStr.value = "Calculated value: $result";
@@ -57,7 +57,7 @@ class TriangleController extends GetxController {
     double? sisiC = double.tryParse(side2Controller.text);
 
     if (sisiA == null || sisiC == null) {
-      resultStr.value = "No calculation value";
+      resultStr.value = "Only valid numbers are allowed";
     } else {
       double result = sqrt(pow(sisiC, 2) - pow(sisiA, 2));
       resultStr.value = "Calculated value: $result";

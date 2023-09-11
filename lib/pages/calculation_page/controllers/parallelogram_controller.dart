@@ -13,7 +13,7 @@ class ParallelogramController extends GetxController {
     double? tinggi = double.tryParse(tinggiController.text);
 
     if (alas == null || tinggi == null) {
-      resultStr.value = "No calculated value";
+      resultStr.value = "Only valid numbers are allowed";
     } else {
       double result = alas * tinggi;
       resultStr.value = "Calculated value: $result";

@@ -16,25 +16,25 @@ class RectangleController extends GetxController {
     double? sisi2 = double.tryParse(side2Controller.text);
 
     if (sisi1 == null || sisi2 == null) {
-      resultStr.value = "No calculated value";
+      resultStr.value = "Only valid numbers are allowed";
     } else {
       double result = sisi1 * sisi2;
       resultStr.value = "Calculated value: $result";
     }
   }
 
-  // UI / UI-State related code
-
   calculateAreaSamaSisi() {
     double? sisi1 = double.tryParse(side1Controller.text);
 
     if (sisi1 == null) {
-      resultStr.value = "No calculated value";
+      resultStr.value = "Only valid numbers are allowed";
     } else {
       double result = sisi1 * sisi1;
       resultStr.value = "Calculated value: $result";
     }
   }
+
+  // UI / UI-State related code
 
   reset() {
     resultStr.value = "No calculated value";

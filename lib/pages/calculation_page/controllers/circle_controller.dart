@@ -13,7 +13,7 @@ class CircleController extends GetxController {
     double? jari = double.tryParse(jariController.text);
 
     if (jari == null) {
-      resultStr.value = "No calculated value";
+      resultStr.value = "Only valid numbers are allowed";
     } else {
       double result = pi * pow(jari, 2);
       resultStr.value = "Calculated value: $result";

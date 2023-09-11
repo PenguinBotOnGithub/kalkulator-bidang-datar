@@ -13,7 +13,7 @@ class KiteController extends GetxController {
     double? diagonalLine2 = double.tryParse(diagonalController2.text);
 
     if (diagonalLine1 == null || diagonalLine2 == null) {
-      resultStr.value = "No calculated value";
+      resultStr.value = "Only valid numbers are allowed";
     } else {
       double result = (diagonalLine1 * diagonalLine2) / 2;
       resultStr.value = "Calculated value: $result";
